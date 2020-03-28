@@ -30,7 +30,7 @@ with open('./result', 'r') as fp:
         date = date.strip()
         date = '/'.join(date.split(' ')[0:3])
         date = datetime.strptime(date, "%d/%b/%Y")
-        date = date.strftime("%d/%m/%Y")
+        date = date.strftime("%m/%d/%Y")
 
 
         print('{},"{}",{},{},{}'.format(date, subject, line, "", ""))
