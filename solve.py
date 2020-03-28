@@ -33,4 +33,4 @@ with open('./result', 'r') as fp:
         date = date.strftime("%d/%m/%Y")
 
 
-        print("{},{},{},{},{}".format(date, subject, line, "", ""))
+        print('{},"{}",{},{},{}'.format(date, subject, line, "", ""))
